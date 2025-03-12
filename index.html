@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorks - Innovative Engineering Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #006699);
+            color: white;
+            padding: 3em 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #ffcc00;
+        }
+        header p {
+            font-size: 1.8em;
+            margin-top: 0.5em;
+        }
+        .logo {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            width: 80px;
+        }
+        .container {
+            padding: 2em;
+        }
+        .section {
+            background: white;
+            padding: 2em;
+            margin-bottom: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #003366;
+        }
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+        .project-card {
+            background: #f9f9f9;
+            padding: 2em;
+            border: 2px solid #003366;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            background: #ffcc00;
+            color: #003366;
+        }
+        .contact, .order-form {
+            text-align: center;
+        }
+        .contact a, .order-form a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .login input[type="password"] {
+            padding: 0.7em;
+            margin-right: 1em;
+        }
+        .login button {
+            padding: 0.7em 1.5em;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="TechWorksLogo.png" alt="TechWorks Logo" class="logo">
+        <h1>Welcome to <span>TechWorks</span></h1>
+        <p>Your go-to platform for EEE & ECE project solutions</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About Us</h2>
+            <p>At <span style="color: #ffcc00; font-weight: bold;">TechWorks</span>, we provide cost-effective and reliable projects for Electrical and Electronics Engineering (EEE) and Electronics and Communication Engineering (ECE) students. Say goodbye to overpriced, faulty projects — order from us today!</p>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <h3>Mini Projects</h3>
+            <div class="projects-list">
+                <div class="project-card">Smart Home Automation</div>
+                <div class="project-card">smart dustbin IOT based</div>
+                <div class="project-card">temperature and humidity moitering system</div>
+                <div class="project-card">Over/under Voltage Protection</div>
+                <div class="project-card">Wireless Power Transmission</div>
+                <div class="project-card">Solar Tracking System</div>
+                <div class="project-card">smart parking system</div>
+                <div class="project-card">Smart Irrigation System</div>
+                <div class="project-card">Fire Alarm System</div>
+                <div class="project-card">automatic Home water tank indicator and motor control with mobile </div>
+            </div>
+
+            <h3>Major Projects</h3>
+            <div class="projects-list">
+                <div class="project-card">Electric Vehicle Battery Management system</div>
+                <div class="project-card">ultrasonic radar for military appliances</div>
+                <div class="project-card">GSM-based Home Security</div>
+                <div class="project-card">Power Theft Detection</div>
+                <div class="project-card">Automatic Street Light</div>
+                <div class="project-card">implementation of vehicle accident detection and reporting system</div>
+                <div class="project-card">Smart Helmet for Accident Detection</div>
+                <div class="project-card">women safety device with gps module</div>
+                <div class="project-card">Accident safety device for cars</div>
+                <div class="project-card">Wifi controlled car</div>
+            </div>
+        </section>
+
+        <section class="section order-form">
+            <h2>Order a Project</h2>
+            <p>Contact us directly to place an order or inquire about custom projects:</p>
+            <p>Phone: <a href="tel:9900103373">9900103373</a></p>
+            <p>Email: <a href="mailto:techworks20253@gmail.com">techworks20253@gmail.com</a></p>
+        </section>
+
+        <section class="section login">
+            <h2>Admin Login</h2>
+            <p>Enter password to modify the site:</p>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="checkPassword()">Login</button>
+        </section>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === 'admin123') {
+                alert('Login successful! You can now edit the site.');
+            } else {
+                alert('Incorrect password.');
+            }
+        }
+    </script>
+</body>
+</html>
